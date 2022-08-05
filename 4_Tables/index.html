@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 2px solid blue;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      th,
+      td {
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="#top">Table</h1>
+    <!-- <table >
+  <thead>
+      <tr>
+        <th>Roll NO</th> 
+        <th>Name</th>
+        <th>School Name</td>
+        <th>Class</th>
+      </tr>
+  </thead>
+    <tbody>
+       <tr >
+        <td>1</td>
+        <td>ABC</td>
+        <td>XYZ School</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>DEF</td>
+        <td>PQR School</td>
+        <td>9</td>
+      </tr>
+    </tbody>
+     
+    </table>  -->
+
+    <table style="width: 40%">
+      <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th style="color: red">Section</th>
+          <th>Item</th>
+          <th>Item</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width: 200px">1.1</td>
+          <td>1.2</td>
+          <td>1.3</td>
+          <td>1.4</td>
+        </tr>
+        <tr>
+          <td>2.1</td>
+          <td>2.2</td>
+          <td>2.3</td>
+          <td>2.4</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Example: HTML entities Table</h2>
+    <table>
+      <thead>
+        <caption>
+          Some Common HTML Entities
+        </caption>
+        <!-- Note: Styling columns like this is limited to a few properties: border, background, width, and visibility. To set other properties you'll have to either style every <td> or <th> in the column, or use a complex selector such as :nth-child. -->
+        <colgroup>
+          <col style="background-color: #d6eeee" />
+        </colgroup>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>HTML Entity</th>
+          <th>Entity Number</th>
+        </tr>
+        <tr>
+          <th>Non-breaking space</th>
+          <td>&amp;nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <th>Less than (&lt;)</th>
+          <td>&amp;lt;</td>
+          <td>&lt;</td>
+        </tr>
+        <tr>
+          <th>More than (&gt;)</th>
+          <td>&amp;gt;</td>
+          <td>&gt;</td>
+        </tr>
+        <tr>
+          <th>Ampersand (&amp;)</th>
+          <td>&amp;amp;</td>
+          <td>&amp;</td>
+        </tr>
+        <tr>
+          <th>Euro (€)</th>
+          <td>&amp;euro;</td>
+          <td>€</td>
+        </tr>
+        <tr>
+          <th>Pound (£)</th>
+          <td>&amp;pound;</td>
+          <td>£</td>
+        </tr>
+        <tr>
+          <th>double quotation mark (“)</th>
+          <td>&amp;quot;</td>
+          <td>“</td>
+        </tr>
+        <tr>
+          <th>single quotation mark (apostrophe) (‘)</th>
+          <td>&amp;apos;</td>
+          <td>‘</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Col Span</h2>
+    <table style="width: 100%">
+      <tr>
+        <th colspan="2">1. Name</th>
+
+        <th>2. Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>43</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+      </tr>
+    </table>
+
+    <!-- <h2>Row Span</h2>
+    <table style="width: 100%">
+      <tr>
+        <th>Name</th>
+        <td>John Doe</td>
+      </tr>
+      <tr>
+        <th rowspan="3">Phone</th>
+        <td>555-1234</td>
+      </tr>
+      <tr>
+        <td>555-8745</td>
+      </tr>
+      <tr>
+        <td>555-8746</td>
+      </tr>
+    </table> -->
+
+    <h2>Table Based Layout</h2>
+
+    <table style="width: 100%">
+      <tr>
+        <td>
+          <img
+            src="https://download.samplelib.com/jpeg/sample-clouds-400x300.jpg"
+            alt="1"
+            width="10px"
+          />
+        </td>
+        <td>
+          <img
+            src="https://.amplelib.com/jpeg/sample-clouds-400x300.jpg"
+            alt="1000000000"
+            title="my
+            image"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img
+            src="https://download.samplelib.com/jpeg/sample-clouds-400x300.jpg"
+            alt="1"
+          />
+        </td>
+        <td>
+          <img
+            src="https://download.samplelib.com/jpeg/sample-clouds-400x300.jpg"
+            alt="1"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img
+            src="https://download.samplelib.com/jpeg/sample-clouds-400x300.jpg"
+            alt="1"
+          />
+        </td>
+        <td>
+          <img
+            src="https://download.samplelib.com/jpeg/sample-clouds-400x300.jpg"
+            alt="1"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img
+            src="https://download.samplelib.com/jpeg/sample-clouds-400x300.jpg"
+            alt="1"
+          />
+        </td>
+        <td>
+          <img
+            src="https://download.samplelib.com/jpeg/sample-clouds-400x300.jpg"
+            alt="1"
+          />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
