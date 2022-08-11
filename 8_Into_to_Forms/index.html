@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1 style="color: red; background-color: yellow">Forms</h1>
+    <h2>References:</h2>
+    <ul>
+      <li>https://web.dev/learn/forms/form-element/</li>
+      <li>
+        https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form
+      </li>
+    </ul>
+    <h2>Simple Form without any attributes</h2>
+
+    <form method="get">
+      <h1>Form</h1>
+      <!-- With the <label> associated correctly with the <input> via its for attribute 
+        (which contains the <input> element's id attribute), 
+        a screenreader will read out something like "Name, edit text". -->
+      <label for="firstname">First Name</label>
+      <input type="text" id="firstname" name="my_name" />
+      <br />
+      <br />
+      <label for="creditcard">credit card</label>
+      <input type="text" id="creditcard" name="creditcard" />
+      <br />
+      <br />
+      <!-- This is another way to associate input with a label. Just place inout inside a label -->
+      <label>
+        About Yourself 50 words: <textarea name="about"></textarea>
+      </label>
+      <br />
+      <br />
+      <button>Submit</button>
+    </form>
+
+    <h2>A form with <code>action</code> attribute</h2>
+    <p>What's the purpose of <code>action</code> attribute ?</p>
+    <p>How <code>name</code> attribute is used in form submission</p>
+    <p>
+      To make a request to https://example.com/animals. A script on the
+      example.com backend can handle requests to /animals and process data from
+      the form.
+    </p>
+    <form action="https://example.com/animals">
+      <!-- The for attribute on the label element matches the id attribute on the input. -->
+      <label for="food">What is your favorite food?</label>
+      <!-- If you submit the form, this name is included in the request.
+      Say that you named a form control food and the user entered Pretzels, the request includes this information as food=Pretzels. -->
+      <input type="text" id="food" name="food" />
+      <button>Save</button>
+    </form>
+
+    <h2>A Form with <code>method</code> attribute</h2>
+    <p>Default value is GET methods, but you can specify POST method</p>
+    <form action="https://example.com/animals" method="post">
+      <label for="color">What is your favorite color?</label>
+      <input type="text" id="color" name="color" />
+      <button>Save</button>
+    </form>
+
+    <h3>When to use GET vs POST method ?</h3>
+    <ul>
+      <li>
+        For forms that process sensitive data use the POST method. The data is
+        encrypted (if you use HTTPS) and only accessible by the backend script
+        that processes the request. The data is not visible in the URL. A common
+        example is a sign-in form.
+      </li>
+      <li>
+        If the data is shareable, you can use the GET method. This way the data
+        will be added to your browser history as it is included in the URL.
+        Search forms often use this. This way you can bookmark a search result
+        page. GET methods sends data through the URL. For Example:
+        <code>https://example.com/animals?animal=frog</code>
+      </li>
+    </ul>
+
+    <h2>Allow multiple line inputs</h2>
+    <form>
+      <label for="name">Name</label>
+      <textarea id="name" name="name"></textarea>
+      <button>Save</button>
+    </form>
+
+    <h2>How to submit a form ?</h2>
+    <h3>Option 1: use <code>button</code></h3>
+    <form>
+      <label for="school">School</label>
+      <textarea id="school" name="school"></textarea>
+      <button>Save</button>
+      <!-- <button type="button">Save</button> -->
+      <label for="area">Area</label>
+      <textarea id="area" name="area"></textarea>
+      <button type="button">No Submit Button</button>
+    </form>
+
+    <h3>Option 2: use <code>input</code> with type submit</h3>
+    <form>
+      <label for="city">City</label>
+      <textarea id="city" name="city"></textarea>
+      <input type="submit" value="Save It Plz" />
+    </form>
+  </body>
+</html>
