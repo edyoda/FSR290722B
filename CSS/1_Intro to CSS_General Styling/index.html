@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kelvin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap-grid.min.css"
+        integrity="sha512-8zKdCtHHn4yrmrAKteDmaIVUMppsWMTlaZCffpRG6k6sVHwWQ2kiJOFQ22e7dSPc7yYD/GC5onkJCfxemQsyeQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- THis is external styling -->
+    <title>Introduction to CSS</title>
+
+    <!-- This is internal styling -->
+    <style>
+        h1,
+        span {
+            color: blue
+        }
+
+        /* p {
+            color: purple;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>This header should look blue</h1>
+
+    <p>
+        <!-- last style will apply ignoring everything before -->
+        In CSS, <span>selectors are used to target the HTML elements</span> on our web pages that we want to style.
+        There are a wide
+        variety
+        of CSS selectors available, allowing for fine-grained precision when selecting elements to style. In this
+        article and
+        its sub-articles we'll run through the different types in great detail, seeing how they work.
+    </p>
+    <!-- This is inline styling -->
+    <p style="color: green;">
+        If you have more than one thing which uses the same CSS then the individual selectors can be combined into a
+        selector list so that the rule is applied to all of the individual selectors. For example, if I have the same
+        CSS for an h1 and also a class of .special, I could write this as two separate rules.
+    </p>
+
+    <h1>List Items</h1>
+    <ul>
+        <li class="kelvin">Item 1</li>
+        <li>Item 3</li>
+        <li class="item">Item 3</li>
+        <li id="special1">Item 4</li>
+        <li id="special2">Special : Item 5</li>
+    </ul>
+    <button class="not-allowed">Not Allowed</button>
+
+    <p>This is demo of icons <i class="fa-solid fa-bug"></i></p>
+
+</body>
+
+</html>

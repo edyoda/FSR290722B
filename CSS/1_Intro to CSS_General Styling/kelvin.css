@@ -1,0 +1,48 @@
+ul {
+  color: orange;
+  text-decoration: overline underline green;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+p {
+  color: aqua;
+}
+p {
+  color: brown;
+}
+p {
+  color: yellowgreen;
+}
+p {
+  color: gray;
+}
+p {
+  color: rgb(102, 102, 22);
+  word-spacing: 20px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.item {
+  background-color: aquamarine;
+}
+.kelvin {
+  background-color: aliceblue;
+}
+#special1 {
+  background-color: yellow;
+}
+.not-allowed {
+  background-color: red;
+  border: lightcoral;
+  color: white;
+}
+/* button:hover {
+  cursor: not-allowed;
+  background-color: orange;
+  color: black;
+} */
+.not-allowed:hover {
+  cursor: not-allowed;
+  background-color: orange;
+  color: black;
+}

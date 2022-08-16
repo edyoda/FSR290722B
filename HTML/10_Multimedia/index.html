@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia</title>
+</head>
+
+<body>
+    <h2>Video</h2>
+    <video width="400" controls height="400" autoplay loop muted preload="auto" poster="poster.png">
+        <source src="https://sample-videos.com/video123/mp4/480/big_buck_bunny_480p_30mb.mp4" type="video/mp4" />
+        <source src="rabbit320.webm" type="video/webm" />
+        <p>
+            Your browser doesn't support this video. Here is a
+            <a href="rabbit320.mp4">link to the video</a> instead.
+        </p>
+    </video>
+
+    <h2>Audio</h2>
+    <!-- There ae no width/height or poster attributes as there is nothing to display on the screen -->
+    <audio controls>
+        <source src="viper.mp3" type="audio/mp3" />
+        <source src="viper.ogg" type="audio/ogg" />
+        <p>
+            Your browser doesn't support this audio file. Here is a
+            <a href="viper.mp3">link to the audio</a> instead.
+        </p>
+    </audio>
+
+    <h2>Embedding</h2>
+    <p>Reference: <a
+            href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies"></a>
+    </p>
+    <p> A little while later (late 90s, early 2000s), plugin technologies became very popular, such as Java Applets and
+        Flash — these allowed web developers to embed rich content into webpages such as videos and animations, which
+        just weren't available through HTML alone. Embedding these technologies was achieved through elements like
+        object, and the lesser-used embed, and they were very useful at the time. They have since fallen out of
+        fashion due to many problems, including accessibility, security, file size, and more. These days major
+        browsers have stopped supporting plugins such as Flash.
+    </p>
+
+    <h3><code>iframe</code></h3>
+    <p>iframe elements are designed to allow you to embed other web documents into the current document. This is great
+        for incorporating third-party content into your website that you might not have direct control over and don't
+        want to have to implement your own version of — such as video from online video providers, commenting systems
+        like Disqus, maps from online map providers, advertising banners, etc. The live editable examples you've been
+        using through this course are implemented using iframes.</p>
+    <br>
+
+    <h3>Please read this: Security Concern</h3>
+    <a
+        href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies#security_concerns"></a>
+    <div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.9456013874387!2d-87.62676074913357!3d41.89402697911902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2d35347bc2d7%3A0xc65e03cf5d97331e!2sStarbucks%20Reserve%20Roastery!5e0!3m2!1sen!2sin!4v1660396425472!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    </div>
+
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uHKfrz65KSU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <h2>The <code>embed</code> and <code>object</code> elements</h2>
+    <p>The embed and object elements serve a different function to iframe — these elements are general purpose embedding
+        tools for embedding external content, such as PDFs.</p>
+    <p>Historically these elements have also been used for embedding content handled by browser plugins such as Adobe
+        Flash,
+        but this technology is now obsolete and is not supported by modern browsers.</p>
+
+    <!-- <h3>embed</h3>
+    <embed type="video/quicktime" src="movie.mov" width="640" height="480" title="Title of my video">
+
+    <br>
+    <h3>object</h3>
+    <object type="video/mp4" data="https://www.youtube.com/watch?v=Sp9ZfSvpf7A" width="1280" height="720">
+    </object> -->
+
+</body>
+
+</html>
