@@ -1,0 +1,68 @@
+body {
+  padding: 40px;
+  border: 5px dotted red;
+}
+.parent {
+  padding: 5px;
+  background-color: skyblue;
+  color: yellow;
+  position: relative;
+
+  /* position: absolute; */
+  height: 200vh;
+}
+/* .child-one {
+  background-color: red;
+  position: static;
+  top: 10px;
+  left: 10px;
+} */
+/* .child-one {
+  background-color: orange;
+  position: relative;
+  top: 10px;
+  left: 10px;
+} */
+/* .child-one {
+  background-color: orange;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+} */
+/* .child-one {
+  background-color: orange;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+} */
+.child-one {
+  background-color: orange;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  bottom: 50px;
+  z-index: 1000;
+}
+.child-two {
+  background-color: rgb(198, 198, 198);
+  position: sticky;
+  top: 10px;
+  left: 0px;
+  bottom: 50px;
+  z-index: 500;
+}
+.child-three {
+  background-color: darkgreen;
+  position: sticky;
+  top: 20px;
+  left: 0px;
+  bottom: 50px;
+  z-index: 100;
+}
+
+p {
+  width: 180px;
+  height: 80px;
+  border: dotted;
+  overflow: scroll;
+}

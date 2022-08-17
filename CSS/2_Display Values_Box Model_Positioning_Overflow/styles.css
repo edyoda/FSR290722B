@@ -1,0 +1,27 @@
+li {
+  display: inline;
+  border: 2px solid red;
+  padding: 20px;
+  margin: 20px;
+}
+
+p {
+  border: 10px solid black;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* span {
+  display: block;
+} */
+
+h3 {
+  box-sizing: border-box;
+  /* border-box will only include padding and border. margin will not be included */
+  padding: 20px;
+  margin: 20px;
+  display: block;
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+}
