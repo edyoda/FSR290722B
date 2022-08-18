@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shadows, Background & Combinators</title>
+</head>
+
+<body>
+    <h2>Shadows</h2>
+    <!-- <p class="txt-shadow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quia labore saepe velit
+        repellat voluptatum
+        nobis quam dolorem corrupti laboriosam non sed reiciendis, atque illo maiores cumque nostrum praesentium optio?
+    </p> -->
+
+    <!-- <h2>Background</h2>
+
+    <p class="bg-clr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit ullam reiciendis nesciunt
+        vero repellat.
+        Labore nostrum ex animi quisquam consequuntur a sit fuga, soluta ducimus tempora repellendus rerum facilis
+        alias.</p> -->
+
+    <h2>Combinators</h2>
+    <h3>Descendant Combinators</h3>
+    <div class="box">
+        <p>Text in .box1
+        <ul>
+            <li>
+                <p>Item 1s</p>
+            </li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        </p>
+        <p>Text in .box 2</p>
+    </div>
+    <p>Text not in .box</p>
+
+    <h3>Child Combinators</h3>
+
+    <ul class="child-combo">
+        <li>Unordered item 1</li>
+        <li>Unordered item 2
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ol>
+        </li>
+        <p> Item 3 </p>
+        <li>Unordered item 4</li>
+    </ul>
+
+    <h3>Adjacent Siblings Combinators</h3>
+    <h4>“h1 + p means select any paragraph tag that is directly after h1 tag (with nothing in between)”</h4>
+    <article>
+        <h1 class="adj-sib">A heading</h1>
+        <!-- <h2>heading 2</h2> -->
+        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
+            melon azuki bean garlic.
+            <!-- <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul> -->
+        </p>
+
+        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean
+            collard
+            greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean
+            collard
+            greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean
+            collard
+            greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean
+            collard
+            greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+    </article>
+
+    <h3>General Siblings Combinator</h3>
+    <article>
+        <p>I am a paragraph. 0</p>
+        <p>I am a paragraph. 1</p>
+        <h1 class="all-sib">A heading</h1>
+        <p>I am a paragraph.</p>
+        <div>I am a div</div>
+        <p>I am another paragraph.
+        </p>
+        <div>This is heading
+            <p>This is a para</p>
+        </div>
+    </article>
+</body>
+
+</html>

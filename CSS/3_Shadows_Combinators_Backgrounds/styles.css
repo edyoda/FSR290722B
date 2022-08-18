@@ -1,0 +1,32 @@
+.txt-shadow {
+  box-shadow: -15px -15px red, 20px 20px green, 40px -40px yellow,
+    50px 50px rgb(0, 42, 255);
+}
+ul p {
+  /* children plus grand children and so on */
+  color: orange;
+}
+
+.child-combo > li {
+  /* only children */
+  border-top: 5px solid red;
+}
+
+.adj-sib + p {
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5em;
+}
+
+.all-sib ~ p {
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5em;
+}
+
+/* .bg-clr {
+  background-color: aqua;
+  background-image: repeat;
+} */
