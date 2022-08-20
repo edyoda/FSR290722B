@@ -15,14 +15,14 @@ body {
 /* div {
   height: 200px;
   background: linear-gradient(to left, pink, blue, red);
-  /* background: linear-gradient(60deg, pink, blue, red); */
+  background: linear-gradient(60deg, pink, blue, red); 
   background: radial-gradient(
     ellipse closest-side,
     red 20px,
     yellow 30%,
     #1e90ff 50%
   );
-} */
+}  */
 .wt-class {
   white-space: pre;
 }
@@ -30,6 +30,6 @@ body {
 .parent {
   display: flex;
 }
-div{
+div {
   border: 2px solid red;
 }
