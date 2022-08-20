@@ -1,0 +1,37 @@
+ul {
+  height: 800px;
+  background-color: yellowgreen;
+  list-style-type: none;
+
+  display: flex;
+  /* flex-wrap: wrap;
+  flex-direction: row; */
+  flex-flow: row wrap;
+  /* justify-content = content placement across the main axis */
+  justify-content: space-between;
+  /* align-items: content placement across the cross axis */
+  align-items: space-between;
+  /* align-content: flex-start; */
+  gap: 100px;
+}
+
+li {
+  border: 2px solid gray;
+  margin: 5px;
+  padding: 5px;
+  white-space: nowrap;
+  background-color: rgb(223, 239, 253);
+}
+
+div {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: yellowgreen;
+}
+span {
+  border: 2px solid red;
+  padding: 10px;
+}
