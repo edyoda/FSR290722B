@@ -1,0 +1,35 @@
+.circle {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  animation-name: color-change;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  /* animation-timing-function: ease-in-out; */
+  animation-timing-function: cubic-bezier(0.75, 0, 1, 1);
+  /* animation-delay: 5s; */
+  animation-direction: alternate;
+}
+
+@keyframes color-change {
+  from {
+    background-color: red;
+  }
+  25% {
+    transform: translate(200px, 200px);
+  }
+  50% {
+    transform: translate(200px);
+  }
+  75% {
+    transform: translate(-20px, 200px);
+
+    /* Not all the properties can be animated */
+    /* visibility: hidden; */
+    /* transform: translate(-20px, 200px); */
+  }
+  to {
+    background-color: blue;
+  }
+}
