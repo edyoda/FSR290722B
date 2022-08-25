@@ -60,3 +60,23 @@ article {
 h1 {
   text-align: center;
 }
+
+@media screen and (min-width: 40em) {
+  article {
+    display: flex;
+    gap: 2em;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    /* flex: 1; */
+    flex-grow: 9;
+  }
+
+  .main-content {
+    text-align: justify;
+  }
+}
