@@ -260,6 +260,7 @@ animal.name = 'Jacky'
 console.log(animal.name)
 
 animal['name'] = 'Jack'
+// animal[name] = 'Jack' // don't use this way to acces a value for the key: name
 
 console.log(animal.type)
 console.log(animal.name)
