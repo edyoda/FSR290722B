@@ -178,6 +178,16 @@ console.log(' uninvited guests:', unInvited)
 
 // Homework problems
 // Q. Add numbers from 1 to 100 until you get a sum more than or equal to 100.
+let sum5 = 0
+let i = 0
+// while (sum5 <= 100) {
+while (sum5 <= 100 && i < 100) {
+  console.log('last sum: ', sum5)
+  console.log(' current i :', i)
+  sum5 = sum5 + i
+  console.log('new sum: ', sum5)
+  i++
+}
 
 //Q. Find first 20 even numbers.
 
