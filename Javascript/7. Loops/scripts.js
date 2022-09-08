@@ -217,3 +217,14 @@ for (value of nums1) {
   sum2 = sum2 + value
 }
 console.log('sum:', sum2)
+
+// find a smallest element in the array
+
+let a = [23, 435, 29, 1, 256, 7, 0]
+let min = 0
+for (i in a) {
+  if (a[i] < a[min]) {
+    min = i
+  }
+}
+console.log('min value', min, a[min])
