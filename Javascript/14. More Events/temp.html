@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<head></head>
+
+<body>
+
+    <h2>JavaScript Timing</h2>
+
+    <p>A script on this page starts this clock:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const timerId = setInterval(myTimer, 1000);
+
+        function myTimer() {
+            const d = new Date();
+            document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+        }
+
+        setTimeout(() => clearInterval(timerId), 5000)
+    </script>
+
+
+
+</body>
+
+</html>

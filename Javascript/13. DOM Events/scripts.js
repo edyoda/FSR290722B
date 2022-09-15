@@ -127,11 +127,11 @@ form.addEventListener('submit', (e) => {
 })
 
 nameInput.addEventListener('change', (e) => {
-  console.log('name')
+  console.log('change => name')
 })
 
-nameInput.addEventListener('focus', (e) => {
-  console.log('name focus')
+address.addEventListener('change', (e) => {
+  console.log('change => name focus')
 })
 
 //focus
@@ -153,4 +153,29 @@ address.addEventListener('blur', (e) => {
 
 multiple.addEventListener('blur', (e) => {
   console.log('multiple blur')
+})
+
+// Input
+
+nameInput.addEventListener('input', (e) => {
+  // console.log(e)
+  const name = e.target.name
+  const type = e.target.type
+  const value = e.target.value
+  const checked = e.target.checked
+  console.log(
+    `name : ${name}, type : ${type}, value : ${value}, checked : ${checked}`
+  )
+})
+address.addEventListener('input', (e) => {
+  const { name, type, value, checked } = e.target
+  console.log(
+    `name : ${name}, type : ${type}, value : ${value}, checked : ${checked}`
+  )
+})
+pets.addEventListener('input', (e) => {
+  const { name, type, value, checked } = e.target
+  console.log(
+    `name : ${name}, type : ${type}, value : ${value}, checked : ${checked}`
+  )
 })
