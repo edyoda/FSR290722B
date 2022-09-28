@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+            font-size: 25px;
+        }
+
+        .tempClass {
+            font-size: 40px;
+            color: blue
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Intro to JS</h1>
+    <p>
+        0. <b>Lorem ipsum dolor sit</b> amet consectetur adipisicing elit. Voluptate quisquam beatae distinctio
+        inventore
+        nulla deserunt <span> minus praesentium iure maiores</span>error earum ad quibusdam doloremque, fuga corrupti
+        itaque, quo
+        laborum pariatur.</p>
+    <p class="test bar">
+        1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quisquam beatae distinctio
+        inventore
+        nulla deserunt error earum ad quibusdam minus praesentium iure maiores doloremque, fuga corrupti itaque, quo
+        laborum pariatur.</p>
+    <p id="test">
+        2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quisquam beatae distinctio inventore
+        nulla deserunt error earum ad quibusdam minus praesentium iure maiores doloremque, fuga corrupti itaque, quo
+        laborum pariatur.</p>
+
+    <button id="redBtn">Button 0</button>
+    <button id="showBtn">Show Text & HTML</button>
+    <div class="noSel">
+        <h1 style=""><span class="markup">&lt;h1&gt;</span>Welcome to My Homepage<span class="markup">&lt;/h1&gt;</span>
+        </h1>
+
+        <div id="helpIntro" style="">
+            <span class="markup">&lt;div class="intro"&gt;</span>
+            <div class="intro">
+                <p style="margin-top: 4px;"><span class="markup">&lt;p&gt;</span>My name is Donald <span id="Lastname"
+                        style=""><span class="markup">&lt;span id="Lastname"&gt;</span>Duck<span
+                            class="markup">&lt;/span&gt;</span></span><span class="markup">&lt;/p&gt;</span></p>
+                <p id="my-Address"><span class="markup">&lt;p id="my-Address"&gt;</span>I live in Duckburg<span
+                        class="markup">&lt;/p&gt;</span></p>
+                <p style="margin-bottom: 4px;"><span class="markup">&lt;p&gt;</span>I have many friends:<span
+                        class="markup">&lt;/p&gt;</span></p>
+            </div>
+            <span class="markup">&lt;/div&gt;</span>
+        </div>
+
+        <br>
+        <div class="helpUl">
+            <span class="markup">&lt;ul id="Listfriends&gt;</span>
+            <ul id="Listfriends" style="margin-top:0px;margin-bottom:0px;">
+
+                <li style=""><span class="markup">&lt;li&gt;</span>Goofy<span class="markup">&lt;/li&gt;</span></li>
+                <li class="micky"><span class="markup">&lt;li&gt;</span>Mickey<span class="markup">&lt;/li&gt;</span>
+                </li>
+                <li><span class="markup">&lt;li&gt;</span>Minnie<span class="markup">&lt;/li&gt;</span></li>
+                <li style=""><span class="markup">&lt;li&gt;</span>Pluto<span class="markup">&lt;/li&gt;</span></li>
+                <li><span class="markup">&lt;li&gt;</span>Donald<span class="markup">&lt;/li&gt;</span></li>
+                <li><span class="markup">&lt;li&gt;</span>Daisy<span class="markup">&lt;/li&gt;</span></li>
+                <li><span class="markup">&lt;li&gt;</span>Pete<span class="markup">&lt;/li&gt;</span></li>
+            </ul>
+            <span class="markup">&lt;/ul&gt;</span>
+        </div>
+        <ul style="display:none;"></ul>
+
+        <p style=""><span class="markup">&lt;p&gt;</span>I really like Daisy!!<span class="markup">&lt;/p&gt;</span></p>
+
+        <p lang="it" title="Hello beautiful"><span class="markup">&lt;p lang="it" title="Hello beautiful"&gt;</span>Ciao
+            bella<span class="markup">&lt;/p&gt;</span></p>
+
+
+        <h3><span class="markup">&lt;h3&gt;</span>We are all animals!<span class="markup">&lt;/h3&gt;</span></h3>
+
+        <p style=""><span class="markup">&lt;p&gt;</span><span><b><span class="markup">&lt;b&gt;</span>My latest
+                    discoveries
+                    has led me to believe that we are all animals:<span class="markup">&lt;/b&gt;</span></b></span><span
+                class="markup">&lt;/p&gt;</span></p>
+
+        <div class="helpTable" style="width:220px;">
+            <span class="markup">&lt;table&gt;</span>
+            <ul style="display:none;"></ul>
+
+            <table cellpadding="2" cellspacing="2"
+                style="border-color: rgb(255, 102, 102); background-color: rgb(255, 255, 153);">
+                <tbody>
+                    <tr style="background-color: rgb(241, 241, 241);">
+                        <th style="">Name</th>
+                        <th style="">Type of Animal</th>
+                    </tr>
+                    <tr style="background-color: rgb(241, 241, 241);">
+                        <td style="">Mickey</td>
+                        <td style="">Mouse</td>
+                    </tr>
+                    <tr style="background-color: rgb(241, 241, 241);">
+                        <td style="">Goofey</td>
+                        <td style="">Dog</td>
+                    </tr>
+                    <tr style="background-color: rgb(241, 241, 241);">
+                        <td style="">Daisy</td>
+                        <td style="">Duck</td>
+                    </tr>
+                    <tr style="background-color: rgb(241, 241, 241);">
+                        <td style="">Pluto</td>
+                        <td style="">Dog</td>
+                    </tr>
+                </tbody>
+            </table>
+            <span class="markup">&lt;/table&gt;</span>
+        </div>
+
+        <div class="noSel newsletter"
+            style="background-color:#99D6FF;border:1px solid #0099FF;padding:10px;xfont-size:12px;">
+            <form>
+                <h4>Subscribe to my newsletter:</h4>
+                <div style="overflow:auto;">
+                    <div style="width:100px;float:left;">Name:</div>
+                    <div style="width:180px;float:left;"><input type="text" style="width:150px" class="markup"></div>
+                </div>
+                <div style="overflow:auto;">
+                    <div style="width:100px;float:left;">E-mail:</div>
+                    <div style="width:180px;float:left;"><input type="text" style="width:150px" class="markup"></div>
+                </div>
+                <div style="overflow:auto;">
+                    <div style="width:100px;float:left;">Password:</div>
+                    <div style="width:180px;float:left;"><input type="password" style="width:150px" name="password"
+                            value="password"></div>
+                </div>
+                Female: <input name="rr" type="radio" id="rr1" checked="checked"
+                    style="outline: transparent solid 2px;">
+                Male: <input name="rr" type="radio" id="rr2" style="outline: transparent solid 2px;">
+                Other: <input name="rr" type="radio" id="rr3" disabled="disabled"
+                    style="outline: transparent solid 2px;">
+                <div style="overflow:auto;">
+                    <h4>Newscategories:</h4>
+                    <div style="width:70px;float:left;">Ducks:</div>
+                    <div style="width:20px;float:left;"><input id="cc1" type="checkbox" checked="checked"
+                            style="outline:2px solid transparent"></div>
+                </div>
+                <div style="overflow:auto;">
+                    <div style="width:70px;float:left;">Dogs:</div>
+                    <div style="width:20px;float:left;"><input id="cc2" type="checkbox"
+                            style="outline:2px solid transparent"></div>
+                </div>
+                <div style="overflow:auto;">
+                    <div style="width:70px;float:left;">Humans:</div>
+                    <div style="width:20px;float:left;"><input id="cc3" type="checkbox"
+                            style="outline:2px solid transparent"></div>
+                </div>
+                <div class="noSel" style="clear:both;"></div>
+                <input class="noSel" type="reset" value="Reset" style="outline:2px solid transparent">
+                <input class="noSel" type="submit" value="Submit" style="outline: transparent solid 2px;">
+                <input class="noSel" type="button" value="Cancel" style="outline:2px solid transparent">
+                <h4>My Favourite:</h4>
+                <select multiple="" class="myselect" style="color: rgb(0, 0, 0);">
+                    <option style="color: rgb(0, 0, 0);">Donald</option>
+                    <option selected="" style="color: rgb(0, 0, 0);">Mickey</option>
+                    <option style="color: rgb(0, 0, 0);">Goofy</option>
+                </select>
+                <h4>Upload image:</h4>
+                <input type="file">
+                <input type="image" src="arrow-r.jpg"
+                    style="border-width: 3px; border-style: solid; border-image: initial;">
+            </form>
+        </div>
+
+        <br>
+
+
+
+
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
