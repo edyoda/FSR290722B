@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+            font-size: 25px;
+        }
+
+        .tempClass {
+            font-size: 40px;
+            color: blue
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Intro to JS</h1>
+    <div id="div1"></div>
+    <div class="row">
+        <div class="col">
+            <button class="button btn-primary" id="get">Fetch Data</button>
+        </div>
+    </div>
+    <div class="card" style="margin:25px">
+        <div class="card-body">
+            <h2>Add a new post:</h2>
+            <form id="ajaxPost" action="https://jsonplaceholder.typicode.com/posts">
+                <div class="mb-3">
+                    <label for="postTitle" class="form-label">Post title:</label>
+                    <input type="text" class="form-control" id="postTitle">
+                </div>
+                <div class="mb-3">
+                    <label for="postBody" class="form-label">Post Body:</label>
+                    <input type="text" class="form-control" id="postBody">
+                </div>
+                <input class="button btn-primary" type="submit" value="Submit">
+            </form>
+            <h5>custom post added using the form: <span id="counter">0</span></h5>
+
+        </div>
+    </div>
+
+
+
+    <!-- <label for="postTitle">Enter title:</label>
+        <input type="text" id="postTitle" name="postTitle"> -->
+    <!-- <label for="postBody">Enter body:</label>
+        <input type="text" id="postBody" name="postBody"> -->
+
+    <h4>Posts :</h4>
+    <ul id="posts"></ul>
+
+
+    <h4>To-do items :</h4>
+    <ul id="todos"></ul>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
