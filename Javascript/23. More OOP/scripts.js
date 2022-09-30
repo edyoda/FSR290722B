@@ -65,7 +65,7 @@ console.log('===> rabbit:', rabbit)
 console.log('===> dog:', dog)
 // console.log('===> new rabbit:', rabbit)
 
-// What is you are using a constructor function ?
+// What if you are using a constructor function ?
 let animal0 = {
   eats: true,
 }
