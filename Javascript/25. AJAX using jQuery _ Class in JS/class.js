@@ -18,7 +18,11 @@ cat001.greeting()
 cat002.greeting()
 
 class CatClass {
+  name
+  breed
+  color
   constructor(name, breed, color) {
+    console.log('from constructor')
     this.name = name
     this.breed = breed
     this.color = color

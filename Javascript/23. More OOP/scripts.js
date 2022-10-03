@@ -104,10 +104,10 @@ console.log(rabbit0.__proto__.startEating === rabbit1.__proto__.startEating)
 // Prototypes and constructor functions
 function User(name) {
   this.name = name
+  this.canLogin = true
   this.introduceSelf = function () {
     console.log(`Hi! I'm ${this.name}.`)
   }
-  this.canLogin = true
 }
 
 function Customer() {
