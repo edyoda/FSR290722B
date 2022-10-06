@@ -11,7 +11,7 @@ class Person
     constructor
         Person(name)
     methods
-        introduceSelf()
+        introduceSelf() => console.log the name
 
 class Course 
     properties

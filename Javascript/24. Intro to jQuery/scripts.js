@@ -1,4 +1,7 @@
-// jQuery syntax:
+// jQuery Reference:
+//www.w3schools.com/jquery/jquery_examples.asp
+
+//jQuery syntax:
 
 // $(selector).action()
 
@@ -21,7 +24,7 @@ Here are some examples of actions that can fail if methods are run before the do
 => Trying to get the size of an image that is not loaded yet
  */
 
-$(document).ready(function () {
+https: $(document).ready(function () {
   console.log('done loading')
 })
 
